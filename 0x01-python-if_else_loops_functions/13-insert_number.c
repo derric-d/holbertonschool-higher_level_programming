@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * insert_node - inserts a node into the begging of a list
+ * @head: pointer to the head of the list
+ * @val: val to add to new member
+ * Return: member added
+ */
 listint_t *insert_node(listint_t **head, int val)
 {
 	listint_t *cpy, *tmp;
