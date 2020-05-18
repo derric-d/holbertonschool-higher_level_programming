@@ -5,7 +5,7 @@ def list_division(l1, l2, llen):
     div = 0
     while ele < llen:
         try:
-            reslist.append(l1[ele] / l2[ele])
+            div = l1[ele] / l2[ele]
         except TypeError:
             print("wrong type")
         except ZeroDivisionError:
