@@ -3,7 +3,7 @@ def list_division(l1, l2, llen):
     reslist = []
     ele = 0
     div = 0
-    while i < llen:
+    while ele < llen:
         try:
             ret.append(l1[ele] / l2[ele])
         except TypeError:
@@ -14,5 +14,5 @@ def list_division(l1, l2, llen):
             print("out of range")
         finally:
             reslist.append(div)
-            i += 1
+            ele += 1
     return reslist
