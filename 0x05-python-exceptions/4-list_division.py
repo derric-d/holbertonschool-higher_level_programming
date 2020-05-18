@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-def list_division(l1, l2, list_length):
-    ret = []
-    if list_length > 0:
-        while list_length > 0:
-            try:
-                ret.append(l1[i] / l2[i])
-            except TypeError:
-                ret.append(0)
-                print("wrong type")
-            except ZeroDivisionError:
-                ret.append(0)
-                print("disvision by zero")
-            except IndexError:
-                ret.append(0)
-                print("out of range")
-            finally:
-                list_length = list_length - 1
-    return ret
+def list_division(l1, l2, llen):
+    reslist = []
+    ele = 0
+    div = 0
+    while i < llen:
+        try:
+            ret.append(l1[ele] / l2[ele])
+        except TypeError:
+            print("wrong type")
+        except ZeroDivisionError:
+            print("division by 0")
+        except IndexError:
+            print("out of range")
+        finally:
+            reslist.append(div)
+            i += 1
+    return reslist
