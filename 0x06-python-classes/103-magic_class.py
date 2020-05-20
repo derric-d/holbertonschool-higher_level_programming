@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import math
 """docstr"""
+import math
 
 
 class MagicClass:
