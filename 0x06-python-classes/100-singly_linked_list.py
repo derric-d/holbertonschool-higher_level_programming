@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""docstr"""
 
 
 class Node:
+    """docstr"""
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -28,6 +30,7 @@ class Node:
 
 
 class SinglyLinkedList:
+    """docstr"""
     def __init__(self):
         self.head = None
 
