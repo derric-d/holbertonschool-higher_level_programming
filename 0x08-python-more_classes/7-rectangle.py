@@ -66,7 +66,7 @@ class Rectangle:
     def __repr__(self):
         """doc"""
         reprstr = "{}({}, {})".format(self.__class__.__name__,
-                                       self.width, self.height)
+                                      self.width, self.height)
         return (reprstr)
 
     def __del__(self):
