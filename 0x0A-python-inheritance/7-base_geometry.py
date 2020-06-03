@@ -2,7 +2,7 @@
 """base geo"""
 
 
-class BaseGeometry(object):
+class BaseGeometry:
     """class basegeo"""
 
     def area(self):
