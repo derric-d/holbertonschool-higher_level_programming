@@ -74,3 +74,6 @@ class TestBaseClass(unittest.TestCase):
         lst_out = Rectangle.load_from_file()
         self.assertEqual(str(lst[0]), str(lst_out[0]))
         self.assertEqual(str(lst[1]), str(lst_out[1]))
+
+if __name__ == '__main__':
+    unittest.main()

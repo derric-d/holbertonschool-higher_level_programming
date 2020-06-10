@@ -50,3 +50,6 @@ class Test_Square(unittest.TestCase):
         self.assertEqual(sq.y, 2)
         sq.update(size=100)
         self.assertEqual(sq.size, 100)
+
+if __name__ == '__main__':
+    unittest.main()
