@@ -6,7 +6,7 @@ from  models.base import Base
 class Rectangle(Base):
     """rec class for the object known as rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
-        """init"""
+        """init doc here"""
         self.width = width
         self.height = height
         self.x = x
@@ -15,12 +15,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """width"""
+        """width doc here"""
         return self.__width
 
     @width.setter
     def width(self, width):
-        """width"""
+        """width doc here"""
         if type(width) is not int:
             raise TypeError('width must be an integer')
         elif width <= 0:
@@ -29,12 +29,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """h"""
+        """h doc here"""
         return self.__height
 
     @height.setter
     def height(self, height):
-        """height"""
+        """height doc here"""
         if type(height) is not int:
             raise TypeError('height must be an integer')
         elif height <= 0:
@@ -43,12 +43,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x get"""
+        """x get doc here"""
         return self.__x
 
     @x.setter
     def x(self, x):
-        """x set"""
+        """x set doc here"""
         if type(x) is not int:
             raise TypeError('x must be an integer')
         elif x < 0:
@@ -57,12 +57,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y get"""
+        """y get doc here"""
         return self.__y
 
     @y.setter
     def y(self, y):
-        """y set"""
+        """y set doc here"""
         if type(y) is not int:
             raise TypeError('y must be an integer')
         elif y < 0:
@@ -70,7 +70,7 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        """area"""
+        """area doc here"""
         return self.width * self.height
 
     def display(self):
@@ -87,12 +87,12 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """doc"""
+        """doc doc here"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
                                                        self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """update"""
+        """update doc here"""
         if args is not None and len(args) != 0:
             n_arg = len(args)
             if n_arg >= 1:
@@ -118,6 +118,6 @@ class Rectangle(Base):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
-        """to dic"""
+        """to dic doc here"""
         return {"id": self.id, "width": self.width, "height": self.height,
                 "x": self.x, "y": self.y}
