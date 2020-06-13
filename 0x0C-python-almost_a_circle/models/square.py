@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""module square"""
+"""module square for the module that holds the square class"""
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """class sqr"""
+    """class sqr, for the class of square,
+    has getters setters, inherits from base>>rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         """init"""
         super().__init__(size, size, x, y, id)

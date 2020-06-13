@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""rec module"""
+"""rec module has getters, setters, a couple overloads"""
 from  models.base import Base
 
 
 class Rectangle(Base):
-    """rec class"""
+    """rec class for the object known as rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """init"""
         self.width = width
