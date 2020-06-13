@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """rec module has getters, setters, a couple overloads"""
-from  models.base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
