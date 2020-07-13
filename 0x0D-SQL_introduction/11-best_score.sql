@@ -1,5 +1,5 @@
 -- select some fields and list all records desc
-select score, name
+SELECT score, name
 FROM second_table
-where score >= 10
+WHERE score >= 10
 ORDER BY score DESC;
