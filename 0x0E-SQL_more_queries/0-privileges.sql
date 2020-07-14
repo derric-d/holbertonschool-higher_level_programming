@@ -1,3 +1,4 @@
 -- list privileges of users
-SHOW GRANTS FOR 'user_0d_1'@'localhost';
-SHOW GRANTS FOR 'user_0d_2'@'localhost';
+-- user_0d_1 exists for this project
+SHOW GRANTS FOR user_0d_1@localhost;
+SHOW GRANTS FOR user_0d_2@localhost;
