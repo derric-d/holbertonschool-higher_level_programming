@@ -13,7 +13,7 @@ if __name__ == "__main__":
     sess = Session(eng)
     state = sess.query(State).filter(State.name == argv[4]).first()
     if state:
-        print("{}".format(state.id))
+        print(state.id)
     else:
         print("Not Found")
     sess.close()
