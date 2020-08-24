@@ -8,6 +8,6 @@ if __name__ == "__main__":
         res = r.read()
         t = type(res)
         d = res.decode('utf-8')
-        print("Body Response:"
+        print("Body response:"
               "\n\t- type: {}\n\t- content: {}\n\t- utf8 content: {}"
               .format(t, res, d))
