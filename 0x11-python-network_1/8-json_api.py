@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """script to fetch url header"""
 import requests
 from sys import argv
