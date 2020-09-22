@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const request = require('request');
 const waId = '/18/';
-const url = 'https://swapi-api.hbtn.io/api/films';
-request(url, (error, response, body) => {
+//const url = 'https://swapi-api.hbtn.io/api/films';
+request(process.argv[2], (error, response, body) => {
   if (error || response.statusCode !== 200) {
     return Error(error);
   } else if (response.statusCode === 200) {
