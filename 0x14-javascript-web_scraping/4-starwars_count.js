@@ -3,8 +3,8 @@ const request = require('request');
 const waId = '/18/';
 const url = 'https://swapi-api.hbtn.io/api/films';
 request(url, (error, response, body) => {
-  if (error) {
-    console.log(error);
+  if (error || response.statusCode !== 200) {
+    return Error(error);
   } else if (response.statusCode === 200) {
     let cnt = 0;
     for (const film of JSON.parse(body).results) {
